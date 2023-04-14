@@ -1,0 +1,56 @@
+# VoteVerifier Plugin by WaMel_ with BungeeCord
+# Discord: 종현#7737
+
+# &를 색상코드로 사용할 수 있습니다.
+
+# <open_url>채팅창에 보여질 텍스트||URL||호버 텍스트</open_url> 형식으로 호버 클릭 메세지를 띄울 수 있습니다.
+
+# %minelist_state% - 마인리스트 추천 여부에 따라 나타나는 메세지가 달라집니다.
+# %minelist_count% - 금일의 마인리스트 추천 갯수입니다.
+
+# %minepage_state% - 마인페이지 추천 여부에 따라 나타나는 메세지가 달라집니다.
+# %minepage_count% - 금일의 마인페이지 추천 갯수입니다.
+
+# 서버 접속 기록이 없는 플레이어가 프록시에 접속 시 나오는 메세지입니다.
+first_join_messages:
+  - ""
+  - "   &9&l서버에 처음 접속하신 걸 환영합니다."
+  - ""
+  - "서버 추천을 아직 안하셨습니다! &e서버 추천시 다양한 혜택이 주어집니다."
+  - "<open_url>&a[마인리스트]||https://minelist.kr||&a클릭시 추천 사이트로 이동합니다.</open_url>   <open_url>&b[마인페이지]||https://mine.page||&b클릭시 추천 사이트로 이동합니다.</open_url>"
+  - ""
+
+# 서버 접속 기록이 있는 플레이어가 프록시에 접속 시 나오는 메세지입니다.
+# 마인리스트, 마인페이지 서버 추천을 둘 중 하나라도 하지 않을 시 나타납니다.
+join_messages:
+  - ""
+  - "   &9&l서버에 돌아오신걸 환영합니다."
+  - ""
+  - "&e추천시 다양한 혜택이 주어집니다!"
+  - "&a&l오늘의 마인리스트 추천수: &f%minelist_count%   &b&l오늘의 마인페이지 추천수: &f%minepage_count%"
+  - ""
+  - "<open_url>&a[마인리스트]||https://minelist.kr||&a클릭시 추천 사이트로 이동합니다.</open_url>   <open_url>&b[마인페이지]||https://mine.page||&b클릭시 추천 사이트로 이동합니다.</open_url>"
+  - "&a마인리스트 추천 여부: %minelist_state%"
+  - "&b마인페이지 추천 여부: %minepage_state%"
+  - ""
+
+# /추천 명령어를 칠 시 나오는 메세지입니다.
+cmd_messages:
+  - ""
+  - "&e추천시 다양한 혜택이 주어집니다!"
+  - "&a&l오늘의 마인리스트 추천수: &f%minelist_count%   &b&l오늘의 마인페이지 추천수: &f%minepage_count%"
+  - ""
+  - "<open_url>&a[마인리스트]||https://minelist.kr||&a클릭시 추천 사이트로 이동합니다.</open_url>   <open_url>&b[마인페이지]||https://mine.page||&b클릭시 추천 사이트로 이동합니다.</open_url>"
+  - "&a마인리스트 추천 여부: %minelist_state%"
+  - "&b마인페이지 추천 여부: %minepage_state%"
+  - ""
+
+# 마인리스트 추천을 했을 시 나올 메세지입니다.
+minelist_true: "&a&lO"
+# 마인리스트 추천을 하지 않았을 시 나올 메세지입니다.
+minelist_false: "&c&lX"
+
+# 마인페이지 추천을 했을 시 나올 메세지입니다.
+minepage_true: "&a&lO"
+# 마인페이지 추천을 하지 않았을 시 나올 메세지입니다.
+minepage_false: "&c&lX"
